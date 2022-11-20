@@ -44,7 +44,7 @@ sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi_spi1.dtbo ~/mkstft35_rpi_spi1.dts
 ```
 you should see something like this in the console:
-![main]([https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/kiauh_menu.PNG](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/overlay_compile.PNG))  
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/overlay_compile.PNG) 
 
 
 2) Activate SPI0 and SPI1 on RaspberryPi.
