@@ -20,7 +20,7 @@ git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
 ```
 If everything went according to plan, after the third command we will see the "window" of the installation.
-*****************kıuah resim******************
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/kiauh_menu.PNG)  
 Install the following parts in sequence. If you get an error at some stage, you don't need to continue. you must first understand the cause of the error, eliminate it, and re-install the package that was not installed.
 Klipper (1 pc) - required. If you have two or more printers working from one raspberry, then I just don’t understand what you are doing in such a noob instruction - scroll on!
 Moonraker (1 pc) - required.
