@@ -44,7 +44,8 @@ sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi_spi1.dtbo ~/mkstft35_rpi_spi1.dts
 ```
 you should see something like this in the console:
-https://hardlock.org.ua/download/file.php?id=7524&sid=918c230e5bbbb9a9a1e7ec3b878b93fc&mode=view
+![main]([https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/kiauh_menu.PNG](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/overlay_compile.PNG))  
+
 
 2) Activate SPI0 and SPI1 on RaspberryPi.
 To do this, edit the file /boot/config.txt
@@ -139,7 +140,7 @@ A calibrator must be installed to calibrate the sensor. First, install the requi
 DISPLAY=:0 ./xlibinput_calibrator --output-file-x11-config=x11_config.txt
 ```
 At this time, a proposal will appear on the screen to poke crosses - we execute. The result of the work will be several lines in the console, such as this:
-https://hardlock.org.ua/download/file.php?id=7525&sid=918c230e5bbbb9a9a1e7ec3b878b93fc&mode=view
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/xlibinput_calibrator_result.PNG)  
 
 Add this result to the file:
 ```shell
