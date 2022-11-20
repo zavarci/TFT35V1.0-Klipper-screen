@@ -20,7 +20,7 @@ git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
 ```
 If everything went according to plan, after the third command we will see the "window" of the installation.
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/kiauh_menu.PNG)  
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/kiauh_menu.PNG)  
 Install the following parts in sequence. If you get an error at some stage, you don't need to continue. you must first understand the cause of the error, eliminate it, and re-install the package that was not installed.
 Klipper (1 pc) - required. If you have two or more printers working from one raspberry, then I just don’t understand what you are doing in such a noob instruction - scroll on!
 Moonraker (1 pc) - required.
@@ -44,7 +44,7 @@ sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi_spi1.dtbo ~/mkstft35_rpi_spi1.dts
 ```
 you should see something like this in the console:
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/overlay_compile.PNG) 
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/overlay_compile.PNG) 
 
 
 2) Activate SPI0 and SPI1 on RaspberryPi.
@@ -140,7 +140,7 @@ A calibrator must be installed to calibrate the sensor. First, install the requi
 DISPLAY=:0 ./xlibinput_calibrator --output-file-x11-config=x11_config.txt
 ```
 At this time, a proposal will appear on the screen to poke crosses - we execute. The result of the work will be several lines in the console, such as this:
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/xlibinput_calibrator_result.PNG)  
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/xlibinput_calibrator_result.PNG)  
 
 Add this result to the file:
 ```shell
