@@ -1,5 +1,5 @@
 # TFT35V1.0-Klipper-screen
-In the process of writing/editing.
+#In the process of writing/editing.
 
 Below is the installation instructions for Raspberry 3B, Raspbian Bullseye Legacy Lite 64bit
 At the time of installation and writing the instructions, version: Linux raspberrypi 5.15.32-v8+ #1538 SMP PREEMPT Thu Mar 31 19:40:39 BST 2022 aarch64 GNU/Linux
