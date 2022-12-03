@@ -49,22 +49,19 @@ copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts and mkstft35_r
 in the console we enter the following commands (we compile the overlays):
 ```shell
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
-sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi_spi1.dtbo ~/mkstft35_rpi_spi1.dts
 ```
 you should see something like this in the console:
 ![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/overlay_compile.PNG) 
 
 
-2) Activate SPI0 and SPI1 on RaspberryPi.
+2) Activate SPI0 on RaspberryPi.
 To do this, edit the file /boot/config.txt
 ```shell
 sudo nano /boot/config.txt
 ```
 look for the line " #dtparam=spi=on " and uncomment it - remove the "#" at the beginning of the line,
 add below (to activate SPI1):
-```shell
-dtoverlay=spi1-2cs,cs0_pin=16,cs1_pin=06
-```
+
 3) connect the screen overlay
 If the screen is connected to SPI0, then add the following lines to the end of the /boot/config.txt file:
 ```shell
@@ -79,16 +76,13 @@ display_rotate=0
 dtoverlay=mkstft35_rpi,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
 ###### MKS TFT35
 ```
-if the screen is connected to SPI1, then in the penultimate line you need to specify another overlay:
-```shell
-dtoverlay=mkstft35_rpi_spi1,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
-```
+
 Save (Ctrl+S) and exit the nano editor (Ctrl+X).
 
 Important note!
-At the time of the experiments, when working through SPI0, the refresh rate by eye corresponds to the set one (about 20 frames per second). And when working through SPI1, the update rate is almost 2 times lower. Not that it was completely impossible to use, but comfort is lost. The screen works like a marlin.
+At the time of the experiments, when working through SPI0, the refresh rate by eye corresponds to the set one (about 20 frames per second). 
 
-Why did you get confused by connecting the screen to SPI1? Because on SPI1 (on Raspberry 3B and 3B+) you cannot connect an ADXL345 accelerometer for use in a clipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay, or use another MCU to connect the accelerometer. And this is not always convenient ... But I made a choice when assembling the board.
+you cannot connect an ADXL345 accelerometer for use in a clipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay, or use another MCU to connect the accelerometer. And this is not always convenient ... 
 4) installation[FBCP](https://github.com/tasanakorn/rpi-fbcp)
 necessary to copy the output of the primary framebuffer to the secondary one (for example, as we have - FBTFT).
 run the commands in sequence:
