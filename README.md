@@ -45,7 +45,7 @@ If you already have Klipper installed and working, but without Klipperscreen, th
 If everything is already working for you, including Klipperscreen on HDMI, then you can continue the installation.
 TFT35 setup
 1) create Overlay
-copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts and mkstft35_rpi_spi1.dts from[archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
+copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from[archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
 in the console we enter the following commands (we compile the overlays):
 ```shell
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
