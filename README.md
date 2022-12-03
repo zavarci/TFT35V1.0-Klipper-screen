@@ -82,7 +82,8 @@ Save (Ctrl+S) and exit the nano editor (Ctrl+X).
 Important note!
 At the time of the experiments, when working through SPI0, the refresh rate by eye corresponds to the set one (about 20 frames per second). 
 
-you cannot connect an ADXL345 accelerometer for use in a clipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay, or use another MCU to connect the accelerometer. And this is not always convenient ... 
+you cannot connect an ADXL345 accelerometer for use in a clipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay, or use another MCU to connect the accelerometer. And this is not always convenient ...
+
 4) installation[FBCP](https://github.com/tasanakorn/rpi-fbcp)
 necessary to copy the output of the primary framebuffer to the secondary one (for example, as we have - FBTFT).
 run the commands in sequence:
