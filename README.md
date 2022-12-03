@@ -43,6 +43,8 @@ Sometimes during the installation of Klipperscreen a message pops up asking you 
 If all the previous installation steps were completed successfully and you see a working Fluidd in the browser, then congratulations - the distribution kit is 100% suitable for us))).
 If you already have Klipper installed and working, but without Klipperscreen, then it is enough to install only the latter.
 If everything is already working for you, including Klipperscreen on HDMI, then you can continue the installation.
+
+
 TFT35 setup
 1) create Overlay
 copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from[archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
