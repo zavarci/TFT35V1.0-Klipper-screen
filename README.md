@@ -82,8 +82,10 @@ Save (Ctrl+S) and exit the nano editor (Ctrl+X).
 Important note!
 At the time of the experiments, when working through SPI0, the refresh rate by eye corresponds to the set one (about 20 frames per second). 
 
-you cannot connect an ADXL345 accelerometer for use in a clipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay, or use another MCU to connect the accelerometer. And this is not always convenient ...
-
+you cannot connect an ADXL345 accelerometer for use in a Klipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay, or use another MCU to connect the accelerometer. And this is not always convenient.. Or you have several options.
+You can use MPU6050 sensor from I2C port. You can connect ADLX345 sensor to another MCU. For example [Robin Nano](https://www.reddit.com/r/klippers/comments/ul5h6p/accelerometer_adxl345_wired_to_robin_nano_v1x/), [Nano](https://nate15329.com/klipper-input-shaper-w-arduino-nano/), [Pico](https://klipper.discourse.group/t/raspberry-pi-pico-adxl345-portable-resonance-measurement/1757) ...
+The winner of the comparison of the two sensors is the MPU6050. there are academic experiments. I think MPU6050 is cheaper and more common.
+[]()
 4) installation[FBCP](https://github.com/tasanakorn/rpi-fbcp)
 necessary to copy the output of the primary framebuffer to the secondary one (for example, as we have - FBTFT).
 run the commands in sequence:
@@ -162,3 +164,4 @@ Reboot
 sudo reboot
 ```
 The touchscreen should work correctly.
+#I got into this kind of complex business because of the dictates of the participants and developers.
