@@ -60,7 +60,6 @@ To do this, edit the file /boot/config.txt
 sudo nano /boot/config.txt
 ```
 look for the line " #dtparam=spi=on " and uncomment it - remove the "#" at the beginning of the line,
-add below (to activate SPI1):
 
 3) connect the screen overlay
 If the screen is connected to SPI0, then add the following lines to the end of the /boot/config.txt file:
