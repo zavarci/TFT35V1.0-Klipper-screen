@@ -32,7 +32,7 @@ If everything went according to plan, after the third command we will see the "w
 Install the following parts in sequence. If you get an error at some stage, you don't need to continue. you must first understand the cause of the error, eliminate it, and re-install the package that was not installed.
 Klipper (1 pc) - required. If you have two or more printers working from one raspberry, then I just don’t understand what you are doing in such a noob instruction - scroll on!
 Moonraker (1 pc) - required.
-Fluidd or Mansail to choose from. My choice is Fluidd.
+Fluidd or Mansail to choose from. My choice is Mansail.
 Klipperscreen 
 
 Sometimes during the installation of Klipperscreen a message pops up asking you to update PIP, just in case I will give the command here (you need to adjust the path if your username is not "pi"):
