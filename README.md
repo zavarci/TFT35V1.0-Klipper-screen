@@ -84,7 +84,7 @@ Important note!
 At the time of the experiments, when working through SPI0, the refresh rate by eye corresponds to the set one (about 20 frames per second). 
 
 you cannot connect an ADXL345 accelerometer for use in a Klipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay .This requires removing a jumper, but was probably somewhat unnecessary. And this is not always convenient.. Or You have several options.
-You can use MPU6050 sensor from I2C port. You can connect ADLX345 sensor to another MCU. For example [Robin Nano](https://www.reddit.com/r/klippers/comments/ul5h6p/accelerometer_adxl345_wired_to_robin_nano_v1x/), [Nano](https://nate15329.com/klipper-input-shaper-w-arduino-nano/), [Pico](https://klipper.discourse.group/t/raspberry-pi-pico-adxl345-portable-resonance-measurement/1757) ...
+You can use [MPU6050]( https://www.klipper3d.org/Measuring_Resonances.html) sensor from I2C port. You can connect ADLX345 sensor to another MCU. For example [Robin Nano](https://www.reddit.com/r/klippers/comments/ul5h6p/accelerometer_adxl345_wired_to_robin_nano_v1x/), [Nano](https://nate15329.com/klipper-input-shaper-w-arduino-nano/), [Pico](https://klipper.discourse.group/t/raspberry-pi-pico-adxl345-portable-resonance-measurement/1757) ...
 I think MPU6050 is cheaper and more common.
 
 4) installation[FBCP](https://github.com/tasanakorn/rpi-fbcp)
