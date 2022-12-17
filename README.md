@@ -40,7 +40,7 @@ Sometimes during the installation of Klipperscreen a message pops up asking you 
 ```shell
 /home/pi/.KlipperScreen-env/bin/python -m pip install --upgrade pip
 ```
-If all the previous installation steps were completed successfully and you see a working Fluidd in the browser, then congratulations - the distribution kit is 100% suitable for us))).
+If all the previous installation steps were completed successfully and you see a working Mansail in the browser, then congratulations - the distribution kit is 100% suitable for us))).
 If you already have Klipper installed and working, but without Klipperscreen, then it is enough to install only the latter.
 If everything is already working for you, including Klipperscreen on HDMI, then you can continue the installation.
 
