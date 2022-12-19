@@ -167,6 +167,6 @@ sudo reboot
 The touchscreen should work correctly.
 
 
-These pins are free 3,5,7,8,9,10,13,14,16,17. If you want to activate Beeper, you can write the necessary codes in your printer.cfg file. beeper pin=15(GPIO22)
+These pins are free 3,5,7,8,9,10,13,14,16,17.Why are there so many empty needles? Easy assembly for Raspberry pi. sockets are very expensive compared to their functions. A very cheap board that you won't be afraid to solder. If you want to activate Beeper, you can write the necessary codes in your printer.cfg file. beeper pin=15(GPIO22)
 
 I got into this kind of complex business because of the dictates of the participants and developers.
