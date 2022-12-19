@@ -166,4 +166,7 @@ sudo reboot
 ```
 The touchscreen should work correctly.
 
+
+These pins are free 3,5,7,8,9,10,13,14,16,17. If you want to activate Beeper, you can write the necessary codes in your printer.cfg file. beeper pin=15(GPIO22)
+
 I got into this kind of complex business because of the dictates of the participants and developers.
