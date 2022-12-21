@@ -53,7 +53,7 @@ in the console we enter the following commands (we compile the overlays):
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
 ```
 you should see something like this in the console:
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/overlay_compile.PNG) 
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/overlayı.PNG) 
 
 
 2) Activate SPI0 on RaspberryPi.
