@@ -237,4 +237,3 @@ gcode:
 ```
 Save and restart to apply changes, test with `BUZZER_TEST`.
 
-I got into this kind of complex business because of the dictates of the participants and developers.
