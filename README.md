@@ -46,6 +46,7 @@ If everything is already working for you, including Klipperscreen on HDMI, then 
 
 
 # TFT35 setup
+
 # 1) 
 create Overlay
 copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from[archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
@@ -235,4 +236,5 @@ gcode:
     M300 S1000 P100
 ```
 Save and restart to apply changes, test with `BUZZER_TEST`.
+
 I got into this kind of complex business because of the dictates of the participants and developers.
