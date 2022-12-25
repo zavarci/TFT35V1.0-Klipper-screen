@@ -49,7 +49,7 @@ If everything is already working for you, including Klipperscreen on HDMI, then 
 
 # 1) 
 create Overlay
-copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from[archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
+copy to home directory (/home/pi/) overlay files mkstft35_rpi.dts from [archive](https://github.com/zavarci/TFT35V1.0-Klipper-screen/raw/main/DTS.rar).
 in the console we enter the following commands (we compile the overlays):
 ```shell
 sudo dtc -@ -I dts -O dtb -o /boot/overlays/mkstft35_rpi.dtbo ~/mkstft35_rpi.dts
@@ -91,7 +91,7 @@ You can use [MPU6050]( https://www.klipper3d.org/Measuring_Resonances.html) sens
 I think MPU6050 is cheaper and more common.
 
 # 3) 
-installation[FBCP](https://github.com/tasanakorn/rpi-fbcp)
+installation FBCP
 necessary to copy the output of the primary framebuffer to the secondary one (for example, as we have - FBTFT).
 run the commands in sequence:
 ```shell
