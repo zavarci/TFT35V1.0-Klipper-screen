@@ -63,19 +63,18 @@ To do this, edit the file /boot/config.txt
 ```shell
 sudo nano /boot/config.txt
 ```
-look for the line " #dtparam=spi=on " and uncomment it - remove the "#" at the beginning of the line,
-
-# 3) 
 connect the screen overlay
 If the screen is connected to SPI0, then add the following lines to the end of the /boot/config.txt file:
 ```shell
 ###### MKS TFT35
+dtparam=spi=on
 hdmi_force_hotplug=1
 hdmi_cvt=hdmi_cvt=480 320 60 1 0 0 0
 hdmi_group=2
 hdmi_mode=1
 hdmi_mode=87
 display_rotate=0
+
 
 dtoverlay=mkstft35_rpi,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
 ###### MKS TFT35
