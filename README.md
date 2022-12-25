@@ -39,11 +39,6 @@ Moonraker (1 pc) - required.
 Fluidd or Mansail to choose from. My choice is Mansail.
 Klipperscreen 
 
-Sometimes during the installation of Klipperscreen a message pops up asking you to update PIP, just in case I will give the command here (you need to adjust the path if your username is not "pi"):
-
-```shell
-/home/pi/.KlipperScreen-env/bin/python -m pip install --upgrade pip
-```
 If all the previous installation steps were completed successfully and you see a working Mansail in the browser, then congratulations - the distribution kit is 100% suitable for us))).
 If you already have Klipper installed and working, but without Klipperscreen, then it is enough to install only the latter.
 If everything is already working for you, including Klipperscreen on HDMI, then you can continue the installation.
