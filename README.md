@@ -152,7 +152,7 @@ DISPLAY=:0 ./xlibinput_calibrator --output-file-x11-config=x11_config.txt
 ```
 At this time, a proposal will appear on the screen to poke crosses Use a stylus type pen for more precision - we execute. The result of the work will be several lines in the console, such as this:
 
-[Picture]()
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/cabrator.PNG)
 
 Add this result to the file:
 
@@ -163,9 +163,9 @@ Ctrl+S Save  Ctrl+X Exit
 I will leave here my parameters for an example:
 ```shell
 Section "InputClass"
-        Identifier      "calibration"
-        MatchProduct    "ADS7846 Touchscreen"
-        Option          "CalibrationMatrix"     "0.003395 -1.121566 1.056742 1.102245 -0.008974 -0.048807 0.000000 0.000000 1.000000 "
+	Identifier	"calibration"
+	MatchProduct	"ADS7846 Touchscreen"
+	Option		"CalibrationMatrix"	"-0.002508 1.113676 -0.059933 -1.082690 -0.008377 1.046131 0.000000 0.000000 1.000000 "
 EndSection
 ```
 reboot
