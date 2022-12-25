@@ -140,15 +140,31 @@ Restart KlipperScreen:
 sudo service KlipperScreen restart
 ```
 
-5) installation[xinput-calibrator](https://github.com/kreijack/xlibinput_calibrator)
+5)
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
+installation[xinput-calibrator](https://github.com/kreijack/xlibinput_calibrator)
+
+```shell
+sudo apt install libxi-dev libx11-dev libxrandr-dev
+```
+then install and compile the calibrator itself:
+```shell
+git clone https://github.com/kreijack/xlibinput_calibrator.git
+cd xlibinput_calibrator/src/
+make
+ls -l xlibinput_calibrator
+```
+Next, being in the folder " ~/xlibinput_calibrator/src/ ", run the calibrator:
+
 ```shell
 DISPLAY=:0 ./xlibinput_calibrator --output-file-x11-config=x11_config.txt
 ```
 At this time, a proposal will appear on the screen to poke crosses - we execute. The result of the work will be several lines in the console, such as this:
-![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pictures/xlibinput_calibrator_result.PNG)  
+
+[Picture]()
 
 Add this result to the file:
+
 ```shell
 sudo nano /usr/share/X11/xorg.conf.d/99-calibration.conf
 ```
@@ -160,10 +176,12 @@ Section "InputClass"
         Option          "CalibrationMatrix"     "0.003395 -1.121566 1.056742 1.102245 -0.008974 -0.048807 0.000000 0.000000 1.000000 "
 EndSection
 ```
-Reboot
+reboot
 ```shell
 sudo reboot
 ```
+
+
 The touchscreen should work correctly.
 
 
