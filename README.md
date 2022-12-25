@@ -89,7 +89,7 @@ you cannot connect an ADXL345 accelerometer for use in a Klipper. Therefore, whe
 You can use [MPU6050]( https://www.klipper3d.org/Measuring_Resonances.html) sensor from I2C port. You can connect ADLX345 sensor to another MCU. For example [Robin Nano](https://www.reddit.com/r/klippers/comments/ul5h6p/accelerometer_adxl345_wired_to_robin_nano_v1x/), [Nano](https://nate15329.com/klipper-input-shaper-w-arduino-nano/), [Pico](https://klipper.discourse.group/t/raspberry-pi-pico-adxl345-portable-resonance-measurement/1757) ...
 I think MPU6050 is cheaper and more common.
 
-# 4) 
+# 3) 
 installation[FBCP](https://github.com/tasanakorn/rpi-fbcp)
 necessary to copy the output of the primary framebuffer to the secondary one (for example, as we have - FBTFT).
 run the commands in sequence:
@@ -143,7 +143,7 @@ Restart KlipperScreen:
 sudo service KlipperScreen restart
 ```
 
-# 5)
+# 4)
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
 installation[xinput-calibrator](https://github.com/kreijack/xlibinput_calibrator)
 
