@@ -3,7 +3,9 @@
 First of all, you need to make a single hardware change on the screen.
 MKS TFT35 V1.0 screen, the interrupt output from the touchscreen is not soldered. This is easy to fix with just one jumper.  Without this refinement, there will be no sensor poll, so the touch does not work in the system.I don't have the slightest idea how the Marlinde sensor activates. 
 As far as I can see from the [schematics](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/sch_mks_tft35_int_ts.GIF), this change has no harm in marlin.
-On the board, the jumper looks like ![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/jumper%20cooper.jpg) it's not that hard, I had a harder time taking the photo.
+On the board, the jumper looks like
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/Improvement%20on%20the%20screen%20board/jumper%20cooper.jpg)
+it's not that hard, I had a harder time taking the photo.
 
 
 
