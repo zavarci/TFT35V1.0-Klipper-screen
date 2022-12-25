@@ -20,7 +20,7 @@ At this stage, there are 3 options:
 2) You already have klipper running, no screen (no Klipperscreen). Then follow the instructions, just install the Klipperscreen.
 3) You already have a Klipperscreen (for example, HDMI), and you want to connect your native 3.5 inch screen. - Let's move on to setting up the TFT35
 Installation from scratch
-So, using [Raspberry Pi Imagerupload](https://www.raspberrypi.com/software/) the above image to a microSD card. You can choose 32 bits - I did not notice the difference, I put it on both options.
+So, using [Raspberry Pi Imagerupload](https://www.raspberrypi.com/software/) the above image to a microSD card. You can choose 32 bits - I did not notice the difference.
 after starting the system and connecting via SSH via [PUTTY](https://www.putty.org/) install GIT:
 ```shell
 sudo apt install git
