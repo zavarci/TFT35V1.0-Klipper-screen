@@ -159,6 +159,7 @@ Add this result to the file:
 ```shell
 sudo nano /usr/share/X11/xorg.conf.d/99-calibration.conf
 ```
+Ctrl+S Save  Ctrl+X Exit
 I will leave here my parameters for an example:
 ```shell
 Section "InputClass"
