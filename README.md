@@ -150,7 +150,7 @@ Next, being in the folder " ~/xlibinput_calibrator/src/ ", run the calibrator:
 ```shell
 DISPLAY=:0 ./xlibinput_calibrator --output-file-x11-config=x11_config.txt
 ```
-At this time, a proposal will appear on the screen to poke crosses - we execute. The result of the work will be several lines in the console, such as this:
+At this time, a proposal will appear on the screen to poke crosses Use a stylus type pen for more precision - we execute. The result of the work will be several lines in the console, such as this:
 
 [Picture]()
 
