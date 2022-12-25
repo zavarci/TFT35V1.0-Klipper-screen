@@ -91,7 +91,7 @@ You can use [MPU6050]( https://www.klipper3d.org/Measuring_Resonances.html) sens
 I think MPU6050 is cheaper and more common.
 
 # 3) 
-installation FBCP
+Installation FBCP
 necessary to copy the output of the primary framebuffer to the secondary one (for example, as we have - FBTFT).
 run the commands in sequence:
 ```shell
