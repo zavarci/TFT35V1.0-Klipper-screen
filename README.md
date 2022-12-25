@@ -135,18 +135,6 @@ We allow the service to work:
 ```shell
 sudo systemctl enable fbcp.service
 ```
-After loading, you should see console lines at the beginning, after which Klipperscreen will start. If it does not start, then you need to run through it[trouble shooter](https://github.com/jordanruthe/KlipperScreen/blob/master/docs/Troubleshooting.md).
-From experience, the most common error is: "xf86OpenConsole: Cannot open virtual console 2 (Permission denied)"
-You just need to add one line "needs_root_rights=yes" to the file "/etc/X11/Xwrapper.config".
-To do this, enter in the console:
-```shell
-sudo nano /etc/X11/Xwrapper.config
-```
-add the line "needs_root_rights=yes", if it is missing, save (Ctrl+S) and exit the nano editor (Ctrl+X).
-Restart KlipperScreen:
-```shell
-sudo service KlipperScreen restart
-```
 
 # 4)
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
