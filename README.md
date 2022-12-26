@@ -131,7 +131,7 @@ sudo systemctl enable fbcp.service
 
 # 4)
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
-installation[xinput-calibrator](https://github.com/kreijack/xlibinput_calibrator)
+installation [xinput-calibrator](https://github.com/kreijack/xlibinput_calibrator)
 
 ```shell
 sudo apt install libxi-dev libx11-dev libxrandr-dev
