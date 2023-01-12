@@ -1,6 +1,6 @@
 # TFT35V1.0-Klipper-screen
 
-![main](1)
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/IMG_1216.jpg)
 
 First of all, you need to make a single hardware change on the screen.
 MKS TFT35 V1.0 screen, the interrupt output from the touchscreen is not soldered. This is easy to fix with just one jumper.  Without this refinement, there will be no sensor poll, so the touch does not work in the system.I don't have the slightest idea how the Marlinde sensor activates. 
