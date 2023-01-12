@@ -76,8 +76,8 @@ hdmi_mode=87
 display_rotate=0
 
 
-dtoverlay=mkstft35_rpi,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
-###### MKS TFT35
+dtoverlay=mkstft35_rpi,rotate=90,speed=24000000,touch,touchgpio=17,fps=20
+###### MKS TFT35 for 180 degree rotate please write ''rotate=270''
 ```
 
 Save (Ctrl+S) and exit the nano editor (Ctrl+X).
