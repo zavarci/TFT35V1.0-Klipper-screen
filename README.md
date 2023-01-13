@@ -178,5 +178,5 @@ The touchscreen should work correctly.
 
 
 
-These pins are free 3,5,7,8,9,10,13,14,16,17.Why are there so many empty needles? Easy assembly for Raspberry pi. sockets are very expensive compared to their functions. A very cheap board that you won't be afraid to solder. 
-![main](1)
+These pins are free 3,5,7,8,9,10,13,14,16,17.Why are there so many empty needles? Easy assembly for Raspberry pi. sockets are very expensive compared to their functions. A very cheap board that you won't be afraid to solder. Grey pins are busy for screen. 
+![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pinmap.png)
