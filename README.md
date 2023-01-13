@@ -180,3 +180,46 @@ The touchscreen should work correctly.
 
 These pins are free 3,5,7,8,9,10,13,14,16,17.Why are there so many empty needles? Easy assembly for Raspberry pi. sockets are very expensive compared to their functions. A very cheap board that you won't be afraid to solder. Grey pins are busy for screen. 
 ![main](https://github.com/zavarci/TFT35V1.0-Klipper-screen/blob/main/pinmap.png)
+
+# Extra - connect MKS TFT35 buzzer for Marlin like "M300: Play Tone"
+
+MKS TFT35 screen has an active buzzer that can be used by Klipper macros to play tones. Differently from the LCD itself which is fed with 5v, the buzzer logic level is 3.3v (fed by Raspberry Pi GPIO logic level), requiring one more wire to be connected.
+
+Flash [RPi Microcontroller service as described in Klipper documentation](https://www.klipper3d.org/RPi_microcontroller.html) so Klipper can access Raspberry Pi GPIO.
+
+Add these lines in you `printer.cfg`:
+```
+[mcu rpi]
+serial: /tmp/klipper_host_mcu
+
+[output_pin BEEPER_Pin]
+pin: rpi:gpio22 # for Raspberry Pi
+pwm: True
+```
+
+Add this macro in your `macros.cfg` or whatever the structure you have in your machine settings. [Source](https://www.reddit.com/r/klippers/comments/o775te/create_marlin_like_m300_beeper_tone/).
+```
+[gcode_macro M300]
+gcode:  
+    {% set S = params.S | default(1000) | int %} ; S sets the tone frequency
+    {% set P = params.P | default(100) | int %} ; P sets the tone duration
+    {% set L = 0.5 %} ; L varies the PWM on time, close to 0 or 1 the tone gets a bit quieter. 0.5 is a symmetric waveform
+    {% if S <= 0 %} ; dont divide through zero
+    {% set F = 1 %}
+    {% set L = 0 %}
+    {% elif S >= 10000 %} ;max frequency set to 10kHz
+    {% set F = 0 %}
+    {% else %}
+    {% set F = 1/S %} ;convert frequency to seconds 
+    {% endif %}
+    SET_PIN PIN=BEEPER_Pin VALUE={L} CYCLE_TIME={F} ;Play tone
+    G4 P{P} ;tone duration
+    SET_PIN PIN=BEEPER_Pin VALUE=0
+
+[gcode_macro BUZZER_TEST]
+gcode:
+    M300 S1000 P100
+    M300 S1000 P100
+    M300 S1000 P100
+```
+Save and restart to apply changes, test with `BUZZER_TEST`.
