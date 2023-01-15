@@ -78,8 +78,8 @@ hdmi_mode=87
 display_rotate=0
 
 
-dtoverlay=mkstft35_rpi,rotate=90,speed=24000000,touch,touchgpio=17,fps=20
-###### MKS TFT35 for 180 degree rotate please write ''rotate=270''
+dtoverlay=mkstft35_rpi,rotate=270,speed=24000000,touch,touchgpio=17,fps=20
+###### MKS TFT35 for 180 degree rotate please write ''rotate=90''
 ```
 
 Save (Ctrl+S) and exit the nano editor (Ctrl+X).
@@ -130,6 +130,7 @@ We allow the service to work:
 ```shell
 sudo systemctl enable fbcp.service
 ```
+log out to putty
 
 # 4)
 A calibrator must be installed to calibrate the sensor. First, install the required libraries:
