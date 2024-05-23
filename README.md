@@ -69,7 +69,6 @@ connect the screen overlay
 Then add the following lines to the end of the /boot/config.txt file:
 ```shell
 ###### MKS TFT35
-dtparam=spi=on
 hdmi_force_hotplug=1
 hdmi_cvt=hdmi_cvt=480 320 60 1 0 0 0
 hdmi_group=2
