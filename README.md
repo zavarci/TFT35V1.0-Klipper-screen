@@ -83,6 +83,16 @@ dtoverlay=mkstft35_rpi,rotate=90,speed=24000000,touch,touchgpio=17,fps=20
 
 Save (Ctrl+S) and exit the nano editor (Ctrl+X).
 
+Important Issue On Moonraker not connection!!!
+Please check in config.txt below area and disable under # Enable DRM VC4 V3D driver
+dtoverlay=vc4-kms-v3d max_framebuffers=2
+
+```
+# Enable DRM VC4 V3D driver
+#dtoverlay=vc4-kms-v3d
+#max_framebuffers=2
+```
+
 Important note!
 you cannot connect an ADXL345 accelerometer for use in a Klipper. Therefore, when the screen is connected to SPI0, to test the resonances, you will need to turn off (comment out) the display overlay .This requires removing a jumper, but was probably somewhat unnecessary. And this is not always convenient.. Or You have several options.
 You can use [MPU6050]( https://www.klipper3d.org/Measuring_Resonances.html) sensor from I2C port. You can connect ADLX345 sensor to another MCU. For example [Robin Nano](https://www.reddit.com/r/klippers/comments/ul5h6p/accelerometer_adxl345_wired_to_robin_nano_v1x/), [Nano](https://nate15329.com/klipper-input-shaper-w-arduino-nano/), [Pico](https://klipper.discourse.group/t/raspberry-pi-pico-adxl345-portable-resonance-measurement/1757) ...
